@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Syukur, Nomor 6</title>
+</head>
+<body>
+    <script>
+        var tahun=[1965,2008,1992]; //Membuat array [variabel] dengan nama tahun dan terdapat 3 nilai integer
+        var thn_bool=[]; //Membuat variabel dengan nama thn_bool, agar nanti dibuat suatu kondisi
+        var thn_sekarang=new Date().getFullYear(); //Membuat variabel dengan nama thn_sekarang dengan mendapatkan tanggal saat ini 
+        for(a=0;a<tahun.length;a++){ //Membuat pengulangan atas array [variabel] dengan nama tahun
+            umur=thn_sekarang-tahun[a]; //Membuat variabel umur berdasarkan hasil dari rumus yang dibuat
+            // * Mengkondisikan jika umur lebih dari 18 [true] dan umur kurang dari sama dengan 18 [false]
+            if(umur>18){
+                thn_bool[a]=true;
+            }
+            else{
+                thn_bool[a]=false;
+            }
+            //Mengkondisikan jika umur lebih dari 18 [true] dan umur kurang dari sama dengan 18 [false] *
+            console.log(umur); //Memanggil variabel umur dengan menggunakan console developer
+        }
+        console.log(tahun); //Memanggil variabel tahun dengan menggunakan console developer
+        console.log(thn_bool); //Memanggil variabel thn_bool dengan menggunakan console developer
+    </script>
+</body>
+</html>
